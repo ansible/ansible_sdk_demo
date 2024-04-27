@@ -27,12 +27,12 @@
       
     - name: Git checkout ansible-sdk
       ansible.builtin.git:
-        repo: 'https://jonnyfiveiq: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@github.com/ansible/ansible-sdk.git'
+        repo: 'https://github.com/ansible/ansible-sdk.git'
         dest: "{{ destination_path }}/ansible-sdk"
 
     - name: Git checkout ansible_sdk_demo
       ansible.builtin.git:
-        repo: 'https://jonnyfiveiq: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@github.com/Akasurde/ansible_sdk_demo.git'
+        repo: 'https://github.com/Akasurde/ansible_sdk_demo.git'
         dest: "{{ destination_path }}/ansible_sdk_demo"
 
     - name: Create instance/inventory directory
